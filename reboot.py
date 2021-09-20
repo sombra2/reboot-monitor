@@ -23,7 +23,7 @@ def telegram_bot_sendtext(bot_message):
   response = requests.get(send_text)
   return response.json()
 
-telegram_bot_sendtext('<b>{}</b> at {} ({} {}) -=REBOOT=- on {}'.format(
+telegram_bot_sendtext('*{}* at {} ({} {}) *REBOOT*\n{}'.format(
   device,
   ip_address,
   city,
